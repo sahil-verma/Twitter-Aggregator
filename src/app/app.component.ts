@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { OnInit } from '@angular/core/src/metadata/lifecycle_hooks';
-import * as Twitter from 'Twitter';
+import * as Twitter from 'twitter';
 
 @Component({
   selector: 'app-root',
@@ -16,9 +16,6 @@ export class AppComponent {
   onKeyPress(event: KeyboardEvent) {
 
     console.log("key pressed: " + (<HTMLInputElement>event.target).value + "\n");
-
-    // get the twitter client package
-    let abc:any = Twitter;
 
     // set the client info - for app authentication
     var client = new Twitter({
